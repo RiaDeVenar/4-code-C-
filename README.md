@@ -18,12 +18,12 @@ if(answer == "да")
     cin >> answer;
     if(answer == "да")
     {
-        color = "Черви";
+        color = "черви";
     }
     
        else 
     {
-        color = "Бубны";
+        color = "бубны";
     }
 }
 
@@ -34,12 +34,12 @@ else
     
     if(answer == "да")
     {
-        color = "Пики";
+        color = "пики";
     }
     
        else 
     {
-        color = "Трефы";
+        color = "трефы";
     }
 }
 
@@ -102,41 +102,35 @@ if(answer == "да")
 
 else
 {
-    cout << "4) Король побьёт эту карту?: ";
+    cout << "4) Это туз?: ";
     cin >> answer;
-
+    
     if (answer == "да")
+    {
+        card = "Туз";
+    }
+    else
     {
         cout << "5) Это дама?: ";
         cin >> answer;
         
         if (answer == "да")
-            {
-                cin >> answer;
-                card = "Дама";
-            }
-        else
         {
-            cout << "6) Это Король?: ";
-            cin >> answer;
-            card = "Король";
+            card = "Дама";
         }
-    }
-    else
-    {
-        cout << "5) Это туз?: ";
-        cin >> answer;
-    
-        if (answer == "да")
-            {
-                cin >> answer;
-                card = "Туз";
-            }
-        else
+        else 
         {
-            cout << "6) Это Король?: ";
+            cout << "6) Это король?: ";
             cin >> answer;
-            card = "Король";
+            
+            if (answer == "да")
+            {
+                card = "Король";
+            }
+            else
+            {
+                card = "Валет";
+            }
         }
     }
 }
